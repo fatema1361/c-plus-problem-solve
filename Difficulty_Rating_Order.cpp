@@ -4,7 +4,7 @@ int main(){
     int T;
     cin>>T;
     while(T--){
-        int N,flag=0;
+        int N;
         cin>>N;
         int X[N],temp[N];
         for(int i=0;i<N;i++){
@@ -13,16 +13,18 @@ int main(){
         }
         
         sort(temp,temp+N);
+        int flag=1;
         for(int i=0;i<N;i++){
-            if(temp[i]==X[i]){
-                flag=1;
+            if(temp[i]!=X[i]){
+                flag=0;
+                break;
             }
         }
         if(flag==1){
-            cout<<"YES"<<endl;  
+            cout<<"Yes"<<endl;  
       }
       else{
-        cout<<"NO"<<endl;
+        cout<<"No"<<endl;
      }
     }
     
