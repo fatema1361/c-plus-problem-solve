@@ -10,10 +10,19 @@ int main(){
         cin>>n;
         string b;
         cin>>b;
-        int l=0,r=n-1;
-        reverse(b.begin(),b.end());
+        string r=b;
+        sort(r.begin(),r.end());
+        r.erase(unique(r.begin(),r.end()),r.end());
+        map<char,char>mp;
+        int m=r.size();
+        for(int i=0;i<m;i++){
+            mp[r[i]]=r[m-i-1];
+        }
+
+       for(int i=0;i<n;i++){
+        b[i]=mp[b[i]];
+       }
         cout<<b<<endl;
-        
     }
     return 0;
 }

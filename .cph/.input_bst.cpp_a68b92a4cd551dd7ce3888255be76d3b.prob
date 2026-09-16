@@ -1,0 +1,1 @@
+{"name":"Local: input_bst","url":"c:\\Users\\Hp\\OneDrive\\Pictures\\c-plus-problem\\input_bst.cpp","tests":[{"id":1789126481959,"input":"7\n18 7 21 -1 12 20 26 9 15 -1 -1 \n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\Hp\\OneDrive\\Pictures\\c-plus-problem\\input_bst.cpp","group":"local","local":true}

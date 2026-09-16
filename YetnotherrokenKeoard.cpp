@@ -6,30 +6,37 @@ int main(){
     while(t--){
         string s;
         cin>>s;
-        vector<char>v;
+        string ans;
+        vector<int>lower,upper;
+        
         for(char c:s){
             if(c=='b'){
-                for(int i=v.size()-1;i>=0;i--){
-                    if(islower(v[i])){
-                        v.erase(v.begin()+i);
-                        break;
-                    }
+                if(!lower.empty()){
+                    ans[lower.back()]='#';
+                    lower.pop_back();
                 }
             }
             else if(c=='B'){
-                for(int i=v.size()-1;i>=0;i--){
-                    if(isupper(v[i])){
-                        v.erase(v.begin()+i);
-                        break;
-                    }
+                if(!upper.empty()){
+                    ans[upper.back()]='#';
+                    upper.pop_back();
                 }
             }
             else{
-            v.push_back(c);
+                ans+=c;
+                int pos=ans.size()-1;
+                if(islower(c)){
+                    lower.push_back(pos);
+                }
+                else{
+                    upper.push_back(pos);
+                }
             }
             
         }
-        for(char c:v){
+
+        for(char c:ans){
+            if(c!='#')
             cout<<c;
         }
         cout<<endl;
