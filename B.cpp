@@ -8,19 +8,16 @@ int main(){
     while(T--){
         int N;
         cin>>N;
-        int A[N];
-        for(int i=0;i<N;i++){
-            cin>>A[i];
-
+        if(N==1||N==3){
+            cout<<1<<endl;
         }
-        int cut=A[0],cnt=0;
-        for(int i=0;i<N;i++){
-           if(cut<=A[i]){
-            cnt++;
-           } 
-
+        else if(N%2==0){
+            cout<<N/2+1<<endl;
         }
-        cout<<cnt<<endl;
-    }
+        else{
+            cout<<(N-1)/2<<endl;
+        }
+        
+    }    
     return 0;
 }
