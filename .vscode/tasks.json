@@ -1,0 +1,19 @@
+
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run C++ with input.txt",
+            "type": "shell",
+            "command": "g++ \"${file}\" -o \"${fileDirname}/${fileBasenameNoExtension}.exe\" && \"${fileDirname}/${fileBasenameNoExtension}.exe\" < \"${workspaceFolder}/input.txt\" > \"${workspaceFolder}/output.txt\"",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}

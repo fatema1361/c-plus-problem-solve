@@ -1,0 +1,1 @@
+{"name":"Local: DDDD","url":"c:\\Users\\Hp\\OneDrive\\Pictures\\c-plus-problem\\DDDD.cpp","tests":[{"id":1791299124159,"input":"3\n4 0\n0 1\n3 1","output":"Off\nOn\nAmbiguous"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\Hp\\OneDrive\\Pictures\\c-plus-problem\\DDDD.cpp","group":"local","local":true}

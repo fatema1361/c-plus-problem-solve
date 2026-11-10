@@ -1,0 +1,1 @@
+{"name":"Local: notepad","url":"c:\\Users\\Hp\\OneDrive\\Pictures\\c-plus-problem\\notepad.cpp","tests":[{"id":1793112851178,"input":"1 1","output":""},{"id":1793113017895,"input":"5 50","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\Hp\\OneDrive\\Pictures\\c-plus-problem\\notepad.cpp","group":"local","local":true}
